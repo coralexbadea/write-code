@@ -1,0 +1,25 @@
+<div class="outter-container">
+    <div class="textarea-container">
+        <textarea (keydown)="myTabFunction($event)" (focus)="inputtingText=false" name="first-textarea" id="first-textarea" cols="30" rows="30" [formControl]="firstFC"></textarea>
+    </div>
+    <div class="textarea-container">
+        <div *ngIf="!inputtingText" (click)="inputtingText=!inputtingText" class="textarea-placeholder" >
+            <div class="green-text">{{greenText}}</div>
+            <div class="red-text">{{redText}}</div>
+        </div>
+        <div *ngIf="inputtingText">
+            <textarea #inputTag name="second-textarea" id="second-textarea" cols="30" rows="30" [formControl]="secondFC" 
+            (focusout)="inputtingText=false"></textarea>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="finished" class="congratz-gif">
+    <img src="/assets/keep-up-the-good-work-boss-baby.gif">
+    <br>
+    <button (click)="finished=false">Continue</button>
+</div>
+
+
+

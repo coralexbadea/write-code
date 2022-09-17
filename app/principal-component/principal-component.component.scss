@@ -1,0 +1,70 @@
+
+.outter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.textarea-container{
+    padding: 20px;
+}
+
+#first-textarea{
+
+}
+#second-textarea{
+
+}
+
+.textarea-placeholder{
+    position: relative;
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 460px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 240px;
+}
+
+.green-text{
+    display: inline;
+    white-space:pre-wrap;
+    color: green;
+
+
+}
+
+.red-text{
+    display: inline;
+    white-space:pre-wrap;
+    color: red;
+}
+
+.congratz-gif{
+
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 150px);
+    width: 300px;
+}
+
+.congratz-gif img{
+    width: 100%;
+}
+
+.congratz-gif button{
+    font-style: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(49, 125, 225);
+    border: none;
+    border-radius: 7px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+}
