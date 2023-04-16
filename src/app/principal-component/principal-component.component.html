@@ -1,7 +1,13 @@
+<div class="instruction-container">
+    <div class="instruction-part">
+        Hello traveler, you can exercise your writing skills here, just try to copy the text from the left text-box to the right text-box.
+    </div>
+</div>
 <div class="outter-container">
     <div class="textarea-container">
         <textarea (keydown)="myTabFunction($event)" (focus)="inputtingText=false" name="first-textarea" id="first-textarea" cols="30" rows="30" [formControl]="firstFC"></textarea>
     </div>
+    <img class="vs-image" src="/assets/vs.png">
     <div class="textarea-container">
         <div *ngIf="!inputtingText" (click)="inputtingText=!inputtingText" class="textarea-placeholder" >
             <div class="green-text">{{greenText}}</div>

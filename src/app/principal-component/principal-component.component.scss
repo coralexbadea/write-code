@@ -1,4 +1,9 @@
 
+.instruction-container{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
 .outter-container{
     display: flex;
     flex-direction: row;
@@ -23,11 +28,11 @@
     border: 1px solid gray;
     font: medium -moz-fixed;
     font: -webkit-small-control;
-    height: 460px;
+    height: 450px;
     overflow: auto;
     padding: 2px;
     resize: both;
-    width: 240px;
+    width: 227px;
 }
 
 .green-text{
@@ -67,4 +72,20 @@
     height: 50px;
     font-size: 17px;
     color: white;
+}
+
+.instruction-part{
+    text-indent: 25px;
+    padding: 70px 9px 9px 290px;
+    width: 500px;
+    height: 100px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.vs-image{
+    margin-top: 120px;
+    width: 150px;
+    height: fit-content;
 }
